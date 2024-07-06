@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>导航</title>
+    <link href="TOOL.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="flex bi">
+    <!--main area-->
+    <div class="flexfulfill flex column">
+      <!--headline-->
+      <!--    <div class="headd hhwhite flexButton headline">
+        <p>44444444444</p>
+      </div>
+      <div class="flexfulfill flex neirong bii overflowauto">-->
+      <!--上方原有".overflowauto"-->
+      <!--headline-->
+
+      <div class="flex column flex3">
+        <!--body's body0-->
+        <div class="headd hhwhite flexButton yyy hide222">
+          <p>Teenyee Guide</p>
+        </div>
+        <!--body's body1-->
+        <!--放上搜索框-->
+        <div class="xiangYingShiSouSuoKuang">
+          <form action="https://baidu.com/s">
+            <label for="wd" class="search"> </label>
+            <input type="text" name="wd" id="wd" placeholder="( ◠‿◠ )" />
+
+            <input type="submit" value="百度一下" />
+          </form>
+        </div>
+        <!--放上几个空白格div-->
+        <div class="flex column"></div>
+        <div class="cc3 white3 yy mgt8 flexButton">
+          <!--time -->
+          <div class="hwhite headdd">
+            <div id="time" class="vermid"></div>
+            <div id="time2" class="vermid"></div>
+          </div>
+        </div>
+      </div>
+      <!--按钮间距-->
+      <div class="daohang6">
+        <!--data-->
+        <div class="flex shuju mgt30 mg8">
+          <!--START-->
+          <!--lil data box-->
+          <div class="flexButton cc2 shujukuai flexfulfill mgr8">
+            <button class="butt" onclick="tiaoZhuan()">便利贴</button>
+            <button class="butt" onclick="tiaoZhuan2()">哔哩哔哩</button>
+          </div>
+          <div class="flexButton cc2 shujukuai flexfulfill mgr8">
+            <button class="butt" onclick="tiaoZhuan9()">百度地图</button>
+            <button class="butt" onclick="tiaoZhuan4()">百度贴吧</button>
+          </div>
+          <div class="flexButton cc2 shujukuai flexfulfill mgr8">
+            <button class="butt" onclick="tiaoZhuan5()">网易云音乐</button>
+            <button class="butt" onclick="tiaoZhuan3()">有道在线翻译</button>
+          </div>
+        </div>
+        <!--END-->
+        <div class="flex shuju mg8">
+          <!--START-->
+          <!--lil data box-->
+          <div class="flexButton cc2 shujukuai flexfulfill mgr8">
+            <button class="butt" onclick="tiaoZhuan7()">天气</button>
+            <button class="butt" onclick="tiaoZhuan8()">网页工具箱</button>
+          </div>
+          <div class="flexButton cc2 shujukuai flexfulfill mgr8">
+            <button class="butt" onclick="tiaoZhuan6()">随机数生成</button>
+            <button class="butt" onclick="tiaoZhuan10()">旋转鸡块</button>
+          </div>
+          <div class="flexButton cc2 shujukuai flexfulfill mgr8">
+            <button class="butt" onclick="tiaoZhuan11()">智慧教育平台</button>
+            <button class="butt" onclick="tiaoZhuan12()">播客推荐</button>
+          </div>
+        </div>
+        <!--END-->
+      </div>
+      <!--table START-->
+      <div class="flex column mg8">
+        <!--table rank-->
+        <!--没东西加入进来了，暂时封闭这两个框
+      <div class="cc white  mgt8">6</div>
+      <div class="cc white  mgt8">6</div>
+    </div>
+    -->
+        <div></div>
+        <!--table END-->
+      </div>
+    </div>
+
+    <script>
+      function tiaoZhuan() {
+        window.location.href = "https://teenyee-l.github.io/LTU/IE.html";
+      }
+      function tiaoZhuan2() {
+        window.location.href = "https://www.bilibili.com";
+      }
+      function tiaoZhuan3() {
+        window.location.href = "https://youdao.com";
+      }
+      function tiaoZhuan4() {
+        window.location.href = "https://tieba.baidu.com/";
+      }
+      function tiaoZhuan5() {
+        window.location.href = "https://music.163.com/";
+      }
+      function tiaoZhuan6() {
+        window.location.href = "https://random.shangzhenyang.com/";
+      }
+      function tiaoZhuan7() {
+        window.location.href = "https://www.msn.cn/zh-cn/weather/forecast";
+      }
+      function tiaoZhuan8() {
+        window.location.href = "https://tool.liumingye.cn/";
+      }
+      function tiaoZhuan9() {
+        window.location.href = "https://map.baidu.com/";
+      }
+      function tiaoZhuan10() {
+        window.location.href = "https://nuggetspin.mov/";
+      }
+      function tiaoZhuan11() {
+        window.location.href = "https://www.smartedu.cn/";
+      }
+      function tiaoZhuan12() {
+        window.location.href = "https://teenyee-l.github.io/LTU/SR.html";
+      }
+      //实时读取时间
+      let bu0;
+      let bu00;
+      function showTime() {
+        let daay = new Date();
+        let ye = daay.getFullYear();
+        let mon = daay.getMonth() + 1;
+        let dai = daay.getDate();
+        let our = daay.getHours();
+        let min = daay.getMinutes();
+        let miao = daay.getSeconds();
+        let key = document.getElementById("time");
+        key.innerHTML = ye + "/" + mon + "/" + dai;
+        let key2 = document.getElementById("time2");
+        key2.innerHTML = our + bu0 + min + bu00 + miao;
+
+        if (min < 10) {
+          bu0 = ":0";
+        } else {
+          bu0 = ":";
+        }
+        if (miao < 10) {
+          bu00 = ":0";
+        } else {
+          bu00 = ":";
+        }
+      }
+      setInterval("showTime()");
+      //搜索建议（构建失败）
+      //导航栏效果
+    </script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      $(function () {
+        var oTop1 = $(document).scrollTop();
+
+        $(window).scroll(function () {
+          var oTop2 = $(document).scrollTop();
+
+          if (oTop2 < oTop1) {
+            $(".headd").addClass("hide222").removeClass("show222");
+          } else {
+            $(".headd").addClass("show222").removeClass("hide222");
+          }
+          oTop1 = $(document).scrollTop();
+        });
+      });
+    </script>
+  </body>
+</html>
