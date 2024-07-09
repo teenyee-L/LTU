@@ -1,10 +1,11 @@
+
 .bi {
-  background-image: url("20240703a.png");
-  background-size: cover;
-  background-position: bottom;
-  min-height: 100vh;
-  background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #38d2dd, #44cc1b, #fad52f);
 }
+
+
 .vert {
   display: flex;
   flex-direction: column;
