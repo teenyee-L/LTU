@@ -30,7 +30,7 @@
             <label for="wd" class="search"> </label>
             <input type="text" name="wd" id="wd" placeholder="( ◠‿◠ )" />
 
-            <input type="submit" value="百度一下" />
+            <input type="submit" value="搜索" />
           </form>
         </div>
         <!--放上几个空白格div-->
@@ -161,23 +161,6 @@
       setInterval("showTime()");
       //搜索建议（构建失败）
       //导航栏效果
-    </script>
-    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
-      $(function () {
-        var oTop1 = $(document).scrollTop();
-
-        $(window).scroll(function () {
-          var oTop2 = $(document).scrollTop();
-
-          if (oTop2 < oTop1) {
-            $(".headd").addClass("hide222").removeClass("show222");
-          } else {
-            $(".headd").addClass("show222").removeClass("hide222");
-          }
-          oTop1 = $(document).scrollTop();
-        });
-      });
     </script>
   </body>
 </html>
