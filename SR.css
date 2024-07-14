@@ -4,11 +4,11 @@ body {
 }
 
 .bi {
-  background-image: url("20240704a.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  background-attachment: fixed;
+
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #38d2dd, #44cc1b, #fad52f);
+
 }
       .bii::-webkit-scrollbar {
         display: none; /* Chrome Safari */
@@ -60,7 +60,7 @@ body {
 
 .daohang {
     padding: 10px;
-    border-bottom: 2px solid #9999;
+    border-bottom: 0px solid #9999;
     font-size: 14px;
     color: #666;
 }
@@ -85,7 +85,6 @@ body {
     }
 
     .shujukuai {
-        margin: 0 0 8px;
         flex: auto;
     }
 }
@@ -114,7 +113,7 @@ body {
 
 .headd {
     height: 60px;
-    background-color: rgba(240, 243, 255, 0.7);
+    background-color: rgba(240, 243, 255, 0.5);
     z-index: 1"
 
 }
