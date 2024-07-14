@@ -1,0 +1,76 @@
+.bodyBox {
+  background-color: #ffdddd;
+  font-family: "rubik", sans-serif;
+}
+
+/* 将标题文本居中对齐 */
+
+h1 {
+  text-align: center;
+}
+
+/* 设置手风琴菜单的宽度，将顶部和底部的边距设置为 90px，左右边距设置为 auto */
+
+.accordion {
+  width: 85%;
+  margin: 50px auto;
+  color: black;
+  background-color: #ffdddd;
+  padding: 45px 45px;
+}
+.accordion .container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+/* 相对于 .container 定位标签，在顶部和底部添加填充并增加字体大小，也使 cursor 为 pointer */
+
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+}
+.accordion .label::before {
+  content: "+";
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 18px;
+  transform: translateY(-50%);
+}
+
+/* 隐藏内容（高度：0），减小字体大小，对齐文本并添加过渡 */
+
+.accordion .content {
+  position: relative;
+  background: #ffdddd;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: 98%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+/* 在内容之间添加一条水平线 */
+
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+/* 活动时取消隐藏内容部分。设置高度 */
+
+.accordion .container.active .content {
+  height: auto;
+}
+
+/* 激活后从加号变为负号 */
+
+.accordion .container.active .label::before {
+  content: "-";
+  font-size: 30px;
+}
