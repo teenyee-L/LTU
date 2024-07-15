@@ -12,8 +12,8 @@ h1 {
 /* 设置手风琴菜单的宽度，将顶部和底部的边距设置为 90px，左右边距设置为 auto */
 
 .accordion {
-  width: 380px;
-  margin: 50px auto;
+  width: 80%;
+  margin: 10px auto;
   color: black;
   background-color: #ffdddd;
   padding: 45px 45px;
