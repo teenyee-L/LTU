@@ -72,6 +72,7 @@ body::-webkit-scrollbar {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 /*大图片动画效果*/
 .animated {
