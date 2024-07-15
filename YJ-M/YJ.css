@@ -2,6 +2,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   display: none; /* Chrome Safari */
@@ -13,7 +14,7 @@ body::-webkit-scrollbar {
   height: 46px;
   position: fixed;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   overflow: auto;
 }
 .bodyline {
@@ -30,7 +31,7 @@ body::-webkit-scrollbar {
 .YJheadline {
   margin: 8px;
   margin-left: 15px;
-  margin-right: 35px;
+  margin-right: 50px;
 }
 .headline-botton {
   display: flex;
