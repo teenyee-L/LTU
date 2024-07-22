@@ -3,7 +3,7 @@ let audioE2 = new Audio("drumkitBag/Pierre Clap.wav");
 let audioE3 = new Audio("drumkitBag/TM-88 Hats [Open Hat 4].wav");
 let audioE4 = new Audio("drumkitBag/Izak Hat.wav");
 let audioE5 = new Audio("drumkitBag/BRENTRAMBO SNARE.wav");
-let audioE6 = new Audio("piano.MP3");
+let audioE6 = new Audio("drumkitBag/piano.mp3");
 function playSound1() {
   audioE1.play();
   audioE1.currentTime = 0;
