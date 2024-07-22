@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <!--Thanks kangwenchang-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>电子便利贴</title>
+    <link href="sn.css" rel="stylesheet" />
+    <script src="sn.js" defer></script>
+  </head>
+  <body>
+    <div class="headline shadow">
+      <h2>电子便利贴</h2>
+    </div>
+
+    <div class="pages" >
+      <div class="vert" >
+        <label for="shuRuKuang" class="whiteMsg">Tell your story:</label>
+        <div id="smile" class="whiteMsg">\(｡◕‿◕｡)/</div>
+        <textarea id="shuRuKuang" name="story" rows="6" cols="32"> </textarea>
+
+        <div>
+          <span id="button1" onclick="change()">保存</span>
+          <span id="button2" class="button2" onclick="clean()">清除</span>
+          
+      </div>
+      </div>
+      <p>&#160</p>
+      <p>&#160</p>
+      <p>&#160</p>
+      <p>&#160</p>
+      <p>&#160</p>
+ 
+    </div>
+    <div>
+      <div class="underline">
+        <div id="date" class="whiteMsg"></div>
+        <div id="time" class="whiteMsg"></div>
+      </div>
+    </div>
+  </body>
+</html>

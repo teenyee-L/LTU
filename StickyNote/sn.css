@@ -1,0 +1,100 @@
+body {
+  background: linear-gradient(135deg, #38d2dd, #44cc1b, #fad52f);
+  background: url("sn.png");
+  background-position-x: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.vert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.whiteMsg {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shuRuKuang {
+  border: 1px solid #fff;
+  padding: 4px 2px;
+  display: block;
+  background: 0;
+  line-height: 1.2;
+  outline: none;
+  text-align: center;
+  transition: border-color 0.3s ease-in-out;
+  border-radius: 0;
+  color: #fff;
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 95%;
+  min-height: 150px;
+  min-width: 180px;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 15px auto;
+  resize: both;
+}
+
+#button1 {
+  color: #ffffff;
+  border-radius: 50%;
+  height: 50px;
+  width: 40px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+.button2 {
+  color: rgb(255, 255, 255);
+  margin-left: 80px;
+}
+@media (max-width: 600px) {
+  #shuRuKuang {
+    max-width: 75%;
+  }
+}
+.headline {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+.underline {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pages {
+  overflow: auto;
+  overflow-y: scroll;
+}
+.pages::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+.shadow {
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+}
