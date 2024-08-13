@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>For GLink</title>
+    <meta name="description" content="GLink" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #4bc0c8, #52e26a, #feac5e, #f3908c);
+      }
+.che {
+  color: blueviolet;
+}
+.ibox {
+  height: 80vh;
+  width: 66%;
+  max-width: 660px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: justify;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: 0.034em;
+  overflow-y: scroll;
+}
+
+.box::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  --c1: #000000;
+  --c2: #ffffff;
+  width: 20px;
+  height: 30px;
+  border-top: 4px solid var(--c1);
+  border-bottom: 4px solid var(--c1);
+  background: linear-gradient(
+      90deg,
+      var(--c1) 2px,
+      var(--c2) 0 5px,
+      var(--c1) 0
+    )
+    50%/7px 8px no-repeat;
+  display: grid;
+  overflow: hidden;
+  animation: l5-0 5s infinite linear;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  width: 75%;
+  height: calc(50% - 4px);
+  margin: 0 auto;
+  border: 2px solid var(--c1);
+  border-top: 0;
+  box-sizing: content-box;
+  border-radius: 0 0 40% 40%;
+  background: linear-gradient(var(--d, 0deg), var(--c2) 50%, #0000 0) bottom /
+      100% 205%,
+    linear-gradient(var(--c2) 0 0) center/0 100%;
+  background-repeat: no-repeat;
+  animation: inherit;
+  animation-name: l5-1;
+}
+.loader::after {
+  transform-origin: 50% calc(100% + 2px);
+  transform: scaleY(-1);
+  --s: 3px;
+  --d: 180deg;
+}
+@keyframes l5-0 {
+  80% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(0.5turn);
+  }
+}
+@keyframes l5-1 {
+  10%,
+  70% {
+    background-size: 100% 205%, var(--s, 0) 100%;
+  }
+  70%,
+  100% {
+    background-position: top, center;
+  }
+}
+
+.chi {
+  display: flex;
+  flex-direction: column;
+}
+.cho {
+  margin-top: 10px;
+}
+
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+
+.loadera {
+  width: 32px;
+  height: 16px;
+  display: flex;
+  animation: l9-0 1s infinite;
+}
+.loadera:before,
+.loadera:after {
+  content: "";
+  flex: 1;
+  background: #ff5f14;
+  transform-origin: top right;
+  animation: l9-1 1s infinite;
+}
+.loadera:after {
+  background: #1743bd;
+  transform-origin: top left;
+  --s: -1;
+}
+@keyframes l9-0 {
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes l9-1 {
+  100% {
+    transform: rotate(calc(var(--s, 1) * 90deg));
+  }
+}
+.shige {
+  text-align: center;
+}
+.jieshu {
+  text-align: right;
+}
+    </style>
+  </head>
+
+  <body class="chi">
+    <div class="ibox">
+      <div class="loadera cho"></div>
+      <div>GLink:</div>
+      <p>......</p>
+      <p>生快。</p>
+      <p>......</p>
+      <p>祝你又一年生日快乐！</p>
+      <p>&#160</p>
+      <p>&#160</p>
+      <p>从哪里说起？</p>
+      <p>时间过得真快——</p>
+      <p>啊！！！</p>
+      <p>距你的上次生日</p>
+      <p>已经过去了整整十二个月</p>
+      <p>在这三千一百多万多秒的时间中</p>
+      <p>你又长了一岁</p>
+      <p>&#160</p>
+      <p>&#160</p>
+      <p>这一年你变化也挺大的</p>
+      <p>变得比上一年更成熟稳重</p>
+      <p>无论干什么事</p>
+      <p>你都冷静了许多</p>
+      <p>&#160</p>
+      <p>&#160</p>
+      <p>你的气质</p>
+      <p>就像是</p>
+      <p>深蓝色色调的天空</p>
+      <p>配上更深蓝色的海面</p>
+      <p>有余光照着你的脸</p>
+      <p>你穿的衣衫纯白</p>
+      <p>你的神态有些忧郁</p>
+      <p>你的眼神透出希望</p>
+      <p>你将会下定决心</p>
+      <p>你走向更亮的世界</p>
+      <p>你去追逐星海</p>
+      <p>祝福你！</p>
+      <p>&#160</p>
+      <p>&#160</p>
+      <p>很幸运</p>
+      <p>在人生最好的年华</p>
+      <p>我能认识你</p>
+      <p>能谈几次天，说很多话</p>
+      <p>探讨交叉的想法</p>
+      <p>真值</p>
+      <p>&#160</p>
+      <p>&#160</p>
+      <p class="shige">千里黄云白日曛，</p>
+      <p class="shige">北风吹雁雪纷纷。</p>
+      <p class="shige">莫愁前路无知己，</p>
+      <p class="shige">天下谁人不识君？</p>
+      <p>&#160</p>
+      <p>你个臭小子,</p>
+      <p>以后，</p>
+      <p>我还跟你，</p>
+      <p>讲义气。</p>
+      <p>&#160</p>
+      <p class="jieshu">地生</p>
+      <p class="jieshu">6月27日</p>
+    </div>
+    <div class="loader cho"></div>
+  </body>
+</html>
